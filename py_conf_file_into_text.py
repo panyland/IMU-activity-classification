@@ -1,11 +1,3 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-"""
-Author: Einari Vaaras, einari.vaaras@tuni.fi, Tampere University
-Speech and Cognition Research Group, https://webpages.tuni.fi/specog/index.html
-
-"""
-
 def convert_py_conf_file_to_text(conf_file_name):
     """
     Read the lines of a .py configuration file into a list, skip the lines with comments in them.
