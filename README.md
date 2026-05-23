@@ -1,0 +1,1 @@
+# Deep learning model that predicts user's posture and movement type based on raw data from three IMU sensors 

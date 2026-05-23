@@ -69,7 +69,7 @@ if __name__ == "__main__":
             log(line)
         log('\n' + '#' * 88 + '\n')
 
-    device = 'cuda' if cuda.is_available() else 'cpu'
+    device = 'cpu'  # GTX 1070 (sm_61) incompatible with installed PyTorch (sm_75+)
     log(f'Device: {device}\n')
     log('Loading data...')
 
