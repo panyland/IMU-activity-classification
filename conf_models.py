@@ -1,7 +1,7 @@
 import numpy as np
 
 # 1 = posture (A1, 7 classes), 2 = movement (B1, 5 classes)
-experiment_number = 1
+experiment_number = 2
 
 if experiment_number == 1:
     label_key = 'A1'
