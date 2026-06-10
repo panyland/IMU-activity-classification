@@ -23,12 +23,49 @@ A two-stage architecture (~489K parameters):
 
 | Metric | Value |
 |---|---|
-| Mean LOSO F1 | 0.72 |
-| Overall accuracy | 86% |
-| Best class | Standing (F1 0.95) |
-| Hardest class | CrawlPosture (F1 0.47, rare class) |
+| Mean LOSO F1 | 0.7228 |
+| Overall accuracy | 85.5% |
+| Mean precision | 0.7266 |
+| Mean recall | 0.7472 |
+| Best class | Standing (F1 0.9468) |
+| Hardest class | CrawlPosture (F1 0.4731, rare class) |
+
+Per-class F1 scores:
+
+| Class | Precision | Recall | F1 |
+|---|---|---|---|
+| Standing | 0.9160 | 0.9798 | 0.9468 |
+| Prone | 0.9405 | 0.8547 | 0.8956 |
+| Sitting | 0.8512 | 0.7123 | 0.7756 |
+| SideRight | 0.6076 | 0.8889 | 0.7218 |
+| Supine | 0.6637 | 0.6608 | 0.6623 |
+| SideLeft | 0.6869 | 0.5927 | 0.6364 |
+| CrawlPosture | 0.4204 | 0.5410 | 0.4731 |
 
 Confusion matrix and per-fold/per-class CSVs are saved in `results1/`.
+
+## Results (Experiment 2 — Movement)
+
+| Metric | Value |
+|---|---|
+| Mean LOSO F1 | 0.6089 |
+| Overall accuracy | 74.8% |
+| Mean precision | 0.7133 |
+| Mean recall | 0.7002 |
+| Best class | Locomotion_Periodic (F1 0.8881) |
+| Hardest class | Locomotion_Aperiodic (F1 0.5075) |
+
+Per-class F1 scores:
+
+| Class | Precision | Recall | F1 |
+|---|---|---|---|
+| Locomotion_Periodic | 0.8632 | 0.9145 | 0.8881 |
+| NonLocomotion_Still | 0.8514 | 0.8019 | 0.8259 |
+| Transition | 0.6876 | 0.6301 | 0.6576 |
+| NonLocomotion_Wobbling | 0.5951 | 0.6968 | 0.6419 |
+| Locomotion_Aperiodic | 0.5693 | 0.4578 | 0.5075 |
+
+Confusion matrix and per-fold/per-class CSVs are saved in `results2/`.
 
 ## Usage
 
